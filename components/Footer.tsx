@@ -10,19 +10,19 @@ export function Footer() {
     <footer className="bg-zinc-950 border-t border-zinc-900 py-12 text-center">
       <div className="container mx-auto px-6 flex flex-col items-center">
         <h3 className="text-2xl font-bold tracking-tighter text-foreground mb-6">
-          Adnan<span className="text-accent">.</span>
+          Adnan Kakar <span className="text-accent"></span>
         </h3>
-        
+
         <div className="flex gap-6 mb-8">
-          <Link href="https://github.com" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-accent transition-colors">
+          <Link href="https://github.com/Eradnan35" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-accent transition-colors">
             <GithubIcon size={24} />
             <span className="sr-only">GitHub</span>
           </Link>
-          <Link href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-accent transition-colors">
+          <Link href="https://www.linkedin.com/in/adnan-kakar" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-accent transition-colors">
             <LinkedinIcon size={24} />
             <span className="sr-only">LinkedIn</span>
           </Link>
-          <Link href="mailto:contact@example.com" className="text-zinc-400 hover:text-accent transition-colors">
+          <Link href="kakaradnan359@gmail.com" className="text-zinc-400 hover:text-accent transition-colors">
             <Mail size={24} />
             <span className="sr-only">Email</span>
           </Link>
