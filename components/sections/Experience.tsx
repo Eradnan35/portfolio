@@ -31,7 +31,7 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 bg-zinc-950/50">
+    <section id="experience" className="py-24 bg-background">
       <div className="container mx-auto px-6 max-w-4xl">
         <SectionHeading 
           title="Experience" 
@@ -50,28 +50,28 @@ export function Experience() {
             >
               <div className="md:grid md:grid-cols-5 gap-8 items-start relative">
                 {/* Timeline Line (Desktop) */}
-                <div className="hidden md:block absolute left-[19.5%] top-0 bottom-0 w-px bg-zinc-800" />
+                <div className="hidden md:block absolute left-[19.5%] top-0 bottom-0 w-px bg-border" />
                 
                 {/* Timeline Dot (Desktop) */}
-                <div className="hidden md:flex absolute left-[19.5%] top-1 -translate-x-1/2 w-8 h-8 rounded-full bg-zinc-900 border-2 border-accent items-center justify-center z-10">
+                <div className="hidden md:flex absolute left-[19.5%] top-1 -translate-x-1/2 w-8 h-8 rounded-full bg-card border-2 border-accent items-center justify-center z-10">
                   <Briefcase size={14} className="text-accent" />
                 </div>
 
                 {/* Timeline Line (Mobile) */}
-                <div className="md:hidden absolute left-0 top-0 bottom-0 w-px bg-zinc-800" />
+                <div className="md:hidden absolute left-0 top-0 bottom-0 w-px bg-border" />
                 
                 {/* Timeline Dot (Mobile) */}
-                <div className="md:hidden absolute left-0 top-1 -translate-x-1/2 w-6 h-6 rounded-full bg-zinc-900 border-2 border-accent flex items-center justify-center z-10">
+                <div className="md:hidden absolute left-0 top-1 -translate-x-1/2 w-6 h-6 rounded-full bg-card border-2 border-accent flex items-center justify-center z-10">
                   <Briefcase size={10} className="text-accent" />
                 </div>
 
                 <div className="md:col-span-1 mb-4 md:mb-0 md:text-right md:pr-12 pt-1">
                   <span className="text-sm font-bold text-accent">{exp.duration}</span>
                 </div>
-                <div className="md:col-span-4 bg-zinc-900/50 border border-zinc-800 p-6 md:p-8 rounded-2xl hover:border-accent/30 transition-colors">
+                <div className="md:col-span-4 card p-6 md:p-8 hover:border-accent/50 hover:-translate-y-1">
                   <h3 className="text-2xl font-bold text-foreground mb-1">{exp.role}</h3>
-                  <h4 className="text-lg text-zinc-400 mb-4">{exp.company}</h4>
-                  <p className="text-zinc-300 leading-relaxed">{exp.description}</p>
+                  <h4 className="text-lg text-muted-foreground mb-4">{exp.company}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
                 </div>
               </div>
             </motion.div>

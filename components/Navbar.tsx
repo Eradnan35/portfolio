@@ -30,7 +30,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-md border-b border-zinc-800 py-3" : "bg-transparent py-5"
+        scrolled ? "glass-panel py-4" : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -44,9 +44,10 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-zinc-400 hover:text-accent transition-colors"
+              className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 group"
             >
               {link.name}
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full rounded-full"></span>
             </Link>
           ))}
         </nav>
@@ -67,14 +68,14 @@ export function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden absolute top-full left-0 w-full bg-background border-b border-zinc-800 py-4 px-6 flex flex-col gap-4 shadow-xl"
+          className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border py-4 px-6 flex flex-col gap-4 shadow-xl"
         >
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-base font-medium text-zinc-300 hover:text-accent transition-colors py-2"
+              className="text-base font-medium text-muted-foreground hover:text-accent transition-colors py-2"
             >
               {link.name}
             </Link>

@@ -7,39 +7,45 @@ import { Code2, Terminal, Cpu } from "lucide-react";
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-zinc-950/50">
+    <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <SectionHeading 
-          title="About Me" 
-          subtitle="Get to know my background and what drives me." 
+        <SectionHeading
+          title="About Me"
+          subtitle="Get to know my background and what drives me."
         />
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 text-lg text-zinc-300 leading-relaxed"
+            className="space-y-6 text-lg text-muted-foreground leading-relaxed"
           >
             <p>
-              I am a final-year Computer Engineering student with a deep passion for building 
-              innovative software solutions. My journey began with a curiosity about how 
-              applications work under the hood, which evolved into a full-fledged pursuit 
-              of software engineering.
+              I’m a final-year Computer Engineering student passionate about building scalable
+              software and AI-powered applications. My journey into technology started with a
+              curiosity about how systems work behind the scenes, which gradually led me to software
+              engineering and modern AI technologies.
             </p>
             <p>
-              I thrive on tackling complex problems and writing clean, maintainable code. 
-              Whether it's developing robust backend architectures or crafting intuitive 
-              front-end interfaces, I enjoy the entire spectrum of software development.
+              Over the years, I’ve developed a strong foundation in Python, FastAPI, databases,
+              and computer science fundamentals. I enjoy solving real-world problems by designing
+              efficient backend systems and integrating AI capabilities such as Retrieval-Augmented Generation (RAG),
+              vector databases, and Large Language Models.
             </p>
             <p>
-              When I'm not coding, I'm usually exploring new technologies, participating in 
-              hackathons, or contributing to open-source projects.
+              I believe great software is not just about writing code—it's about creating reliable, maintainable, and
+              impactful solutions. Whether I'm developing APIs, building full-stack applications, or experimenting with
+              emerging AI tools, I’m always eager to learn and improve.
+            </p>
+            <p>
+              Beyond academics, I spend my time exploring new technologies, working on personal projects, contributing
+              to collaborative development efforts, and continuously preparing myself for a career in software engineering.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -49,30 +55,30 @@ export function About() {
             {[
               {
                 icon: <Code2 className="text-accent" size={32} />,
-                title: "Software Development",
-                description: "Building scalable web applications from scratch.",
+                title: "Backend Development",
+                description: "Building scalable APIs and robust server-side applications.",
               },
               {
                 icon: <Terminal className="text-accent" size={32} />,
-                title: "System Architecture",
-                description: "Designing efficient and secure software systems.",
+                title: "AI Engineering",
+                description: "Exploring RAG, LLMs, vector databases, and intelligent systems.",
               },
               {
                 icon: <Cpu className="text-accent" size={32} />,
                 title: "Computer Engineering",
-                description: "Bridging the gap between hardware and software.",
+                description: "Combining software fundamentals with problem-solving and system design.",
               }
             ].map((item, index) => (
-              <div 
-                key={index} 
-                className="flex items-start gap-4 p-6 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-accent/50 transition-colors"
+              <div
+                key={index}
+                className="flex items-start gap-4 p-6 card hover:border-accent/50"
               >
-                <div className="p-3 bg-zinc-950 rounded-xl shrink-0">
+                <div className="p-3 bg-background rounded-xl shrink-0">
                   {item.icon}
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-zinc-400">{item.description}</p>
+                  <p className="text-muted-foreground">{item.description}</p>
                 </div>
               </div>
             ))}

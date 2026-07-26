@@ -4,13 +4,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Download, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
       {/* Background gradients */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px] -z-10" />
-      <div className="absolute bottom-1/4 right-1/4 w-[28rem] h-[28rem] bg-purple-500/10 rounded-full blur-[150px] -z-10" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/15 rounded-full blur-[140px] -z-10" />
+      <div className="absolute bottom-1/4 right-1/4 w-[28rem] h-[28rem] bg-purple-500/10 rounded-full blur-[160px] -z-10" />
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
@@ -27,7 +28,7 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-foreground leading-tight">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">Adnan Kakar</span>
           </h1>
-          <p className="text-lg md:text-xl text-zinc-400 max-w-lg leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
             A final-year Computer Engineering student passionate about crafting clean, efficient, and scalable software solutions.
           </p>
 
@@ -35,14 +36,14 @@ export function Hero() {
             <a
               href="/resume/Adnan_Kakar_Python_Developer.pdf"
               download
-              className="px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-all flex items-center gap-2 shadow-lg shadow-accent/25"
+              className="btn-primary"
             >
               <Download size={20} />
               Download Resume
             </a>
             <Link
               href="#projects"
-              className="px-6 py-3 bg-zinc-800 text-foreground font-semibold rounded-lg hover:bg-zinc-700 transition-all flex items-center gap-2 border border-zinc-700"
+              className="btn-secondary"
             >
               View Work
               <ArrowRight size={20} />
@@ -56,11 +57,16 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="relative hidden md:block"
         >
-          {/* Placeholder for an image or 3D element. Right now, a styled graphic. */}
-          <div className="w-full aspect-square relative rounded-full border border-zinc-800 p-8">
-            <div className="w-full h-full rounded-full bg-gradient-to-br from-zinc-900 to-zinc-800 flex items-center justify-center border border-zinc-700/50 shadow-2xl relative overflow-hidden">
-              <div className="absolute inset-0 bg-grid-zinc-700/[0.2] bg-[size:20px_20px]" />
-              <h2 className="text-9xl font-black text-zinc-800/50 select-none">AK</h2>
+          {/* Passport Photo */}
+          <div className="w-full aspect-square relative rounded-full border border-border/50 p-6 shadow-xl shadow-accent/5">
+            <div className="w-full h-full rounded-full border border-border/80 shadow-2xl shadow-accent/10 relative overflow-hidden flex items-center justify-center">
+              <Image 
+                src="/images/passport-photo.jpeg"
+                alt="Adnan Kakar"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </motion.div>

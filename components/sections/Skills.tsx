@@ -6,16 +6,24 @@ import { SectionHeading } from "../SectionHeading";
 
 const skillCategories = [
   {
-    title: "Frontend",
-    skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML/CSS"],
+    title: "Programming & Core CS",
+    skills: ["Python", "SQL", "Data Structures & Algorithms", "DBMS", "Operating Systems", "Computer Networks"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express", "Python", "SQL", "MongoDB", "RESTful APIs"],
+    title: "Backend Development",
+    skills: ["FastAPI", "Flask", "REST APIs", "SQLAlchemy", "Pydantic", "API Design"],
   },
   {
-    title: "Tools & Technologies",
-    skills: ["Git & GitHub", "Docker", "AWS", "Linux", "VS Code", "Figma"],
+    title: "Databases",
+    skills: ["MySQL", "PostgreSQL", "SQLite", "Database Design", "Data Modeling"],
+  },
+  {
+    title: "AI & LLM Engineering",
+    skills: ["Prompt Engineering", "RAG", "Vector Databases", "Embedding Models", "LangChain", "LangGraph", "AI Agent Development"],
+  },
+  {
+    title: "Tools & Deployment",
+    skills: ["Git/GitHub", "VS Code", "Postman", "Vercel", "Linux"],
   }
 ];
 
@@ -23,29 +31,28 @@ export function Skills() {
   return (
     <section id="skills" className="py-24">
       <div className="container mx-auto px-6">
-        <SectionHeading 
-          title="Technical Skills" 
-          subtitle="A comprehensive list of technologies I work with." 
+        <SectionHeading
+          title="Technical Skills"
+          subtitle="A comprehensive list of technologies I work with."
         />
-        
+
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {skillCategories.map((category, idx) => (
-            <motion.div 
+            <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:shadow-xl hover:shadow-accent/5 transition-all"
+              className="card p-8 hover:shadow-accent/5 hover:-translate-y-1"
             >
-              <h3 className="text-2xl font-bold text-foreground mb-6 pb-4 border-b border-zinc-800">
+              <h3 className="text-2xl font-bold text-foreground mb-6 pb-4 border-b border-border">
                 {category.title}
               </h3>
               <ul className="space-y-4">
                 {category.skills.map((skill) => (
                   <li key={skill} className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-accent" />
-                    <span className="text-zinc-300 font-medium">{skill}</span>
+                    <span className="text-muted-foreground font-medium">{skill}</span>
                   </li>
                 ))}
               </ul>

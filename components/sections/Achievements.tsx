@@ -40,13 +40,13 @@ export function Achievements() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg hover:border-zinc-700 transition-all"
+              className="card p-8 flex flex-col items-center text-center hover:shadow-md hover:border-accent/50 hover:-translate-y-1"
             >
-              <div className="mb-6 p-4 bg-zinc-950 rounded-full border border-zinc-800 shadow-inner">
+              <div className="mb-6 p-4 bg-background rounded-full border border-border shadow-inner">
                 {item.icon}
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">{item.title}</h3>
-              <p className="text-zinc-400 leading-relaxed">{item.description}</p>
+              <p className="text-muted-foreground leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </div>
