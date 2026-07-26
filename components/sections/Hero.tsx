@@ -25,11 +25,11 @@ export function Hero() {
               Available for Internships & Roles
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-foreground leading-tight">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">Adnan Kakar</span>
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tighter text-foreground leading-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">Adnan Kakar</span> | Computer Engineering Student
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-            A final-year Computer Engineering student passionate about crafting clean, efficient, and scalable software solutions.
+            A final-year Computer Engineering student from India, passionate about crafting clean, efficient, and scalable software solutions. Specializing as a Backend and AI Developer.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-4">
@@ -62,7 +62,7 @@ export function Hero() {
             <div className="w-full h-full rounded-full border border-border/80 shadow-2xl shadow-accent/10 relative overflow-hidden flex items-center justify-center">
               <Image 
                 src="/images/passport-photo.jpeg"
-                alt="Adnan Kakar"
+                alt="Adnan Kakar - Computer Engineering Student and AI Developer"
                 fill
                 className="object-cover"
                 priority

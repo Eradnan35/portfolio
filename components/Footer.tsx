@@ -32,7 +32,7 @@ export function Footer() {
           Designed and built with <Heart size={14} className="text-red-500" /> by Adnan Kakar
         </p>
         <p className="text-muted-foreground/80 text-xs mt-2">
-          &copy; {currentYear} All rights reserved.
+          &copy; {currentYear} Kakar Adnan. All rights reserved. | Portfolio of Adnan Kakar - AI & Backend Developer
         </p>
       </div>
     </footer>

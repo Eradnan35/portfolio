@@ -23,15 +23,15 @@ export function About() {
             className="space-y-6 text-lg text-muted-foreground leading-relaxed"
           >
             <p>
-              I’m a final-year Computer Engineering student passionate about building scalable
+              Hi, I'm Kakar Adnan. I’m a final-year Computer Engineering student passionate about building scalable
               software and AI-powered applications. My journey into technology started with a
               curiosity about how systems work behind the scenes, which gradually led me to software
               engineering and modern AI technologies.
             </p>
             <p>
-              Over the years, I’ve developed a strong foundation in Python, FastAPI, databases,
+              As an aspiring FastAPI Developer and LangChain Developer, I’ve developed a strong foundation in Python, databases,
               and computer science fundamentals. I enjoy solving real-world problems by designing
-              efficient backend systems and integrating AI capabilities such as Retrieval-Augmented Generation (RAG),
+              efficient backend systems and integrating AI capabilities as a RAG Developer, utilizing Retrieval-Augmented Generation,
               vector databases, and Large Language Models.
             </p>
             <p>
