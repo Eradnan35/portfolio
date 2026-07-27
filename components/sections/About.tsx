@@ -23,26 +23,15 @@ export function About() {
             className="space-y-6 text-lg text-muted-foreground leading-relaxed"
           >
             <p>
-              Hi, I'm Kakar Adnan. I’m a final-year Computer Engineering student passionate about building scalable
-              software and AI-powered applications. My journey into technology started with a
-              curiosity about how systems work behind the scenes, which gradually led me to software
-              engineering and modern AI technologies.
+              I am a final year Computer Engineering student. I really like building software and I want to know how technology works. What started as curiosity has grown into a passion for creating solutions that are useful and make a difference. I have learned a lot about software engineering and computer science fundamentals. I always look for ways to learn more get better and challenge myself.
             </p>
             <p>
-              As an aspiring FastAPI Developer and LangChain Developer, I’ve developed a strong foundation in Python, databases,
-              and computer science fundamentals. I enjoy solving real-world problems by designing
-              efficient backend systems and integrating AI capabilities as a RAG Developer, utilizing Retrieval-Augmented Generation,
-              vector databases, and Large Language Models.
+              My main interests are in backend development, system design and AI-powered applications. I like working on projects where I design APIs build systems that can handle a lot of users and try out technologies, like Large Language Models and Retrieval-Augmented Generation. Each project teaches me something and helps me grow as a developer and a problem solver. I am proud of writing clean code and building software that serves a purpose.
             </p>
             <p>
-              I believe great software is not just about writing code—it's about creating reliable, maintainable, and
-              impactful solutions. Whether I'm developing APIs, building full-stack applications, or experimenting with
-              emerging AI tools, I’m always eager to learn and improve.
+              Outside of coding I try out technologies work with others on projects and keep up with what is happening in the tech industry. I think it is important to learn, work together and share ideas with others who like technology. My goal is to start my career as a software engineer and help build products that make a difference. For me Computer Engineering is not something I study. It is something I like to work with every day. I like Computer Engineering. I want to work with it every day.
             </p>
-            <p>
-              Beyond academics, I spend my time exploring new technologies, working on personal projects, contributing
-              to collaborative development efforts, and continuously preparing myself for a career in software engineering.
-            </p>
+          
           </motion.div>
 
           <motion.div
